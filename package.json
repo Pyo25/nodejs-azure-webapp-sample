@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-azure-webapp-sample",
+  "version": "0.1.0",
+  "description": "Simple Node.js Azure Web App",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pyo25/nodejs-azure-webapp-sample.git"
+  },
+  "dependencies": {
+    "connect": "^3.4.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
