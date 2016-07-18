@@ -1,16 +1,16 @@
 
 'use strict';
 
-var connect = require('connect');
-
-var app = connect();
-
 var port = process.env.PORT;
+var restify = require('restify');
 
-app.use(function (req, res) {
-  res.end('up & running on ' + port);
+var server = restify.createServer();
+
+server.get('/', function (req, res, next) {
+  res.send(200, 'up & running on ' + port);
+  return next();
 });
 
-app.listen(port);
-
-console.log('Server started on %s', port);
+server.listen(port, function () {
+  console.log('Server started on %s', port);
+});

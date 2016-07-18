@@ -7,7 +7,7 @@
     "url": "https://github.com/Pyo25/nodejs-azure-webapp-sample.git"
   },
   "dependencies": {
-    "connect": "^3.4.1"
+    "restify": "^4.1.1"
   },
   "scripts": {
     "start": "node server.js"
